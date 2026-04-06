@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipertensi | Edukasi Kesehatan</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col"
+  >
+    <header
+      class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50"
+    >
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-blood-500 rounded-xl flex items-center justify-center text-white shadow-sm"
+            >
+              <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+            </div>
+            <span class="font-bold text-2xl tracking-tight text-slate-900"
+              >Hipertensi</span
+            >
+          </div>
+        </div>
+
+        <nav
+          class="flex space-x-2 sm:space-x-4 overflow-x-auto no-scrollbar py-3 border-t border-slate-100 mt-2"
+        >
+          <button
+            onclick="showSection('pengertian')"
+            class="nav-btn active whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-blood-50 text-blood-600 ring-1 ring-blood-200"
+            data-target="pengertian"
+          >
+            Pengertian
+          </button>
+          <button
+            onclick="showSection('gejala')"
+            class="nav-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold text-slate-500 hover:bg-slate-100 transition-all duration-200"
+            data-target="gejala"
+          >
+            Gejala
+          </button>
+          <button
+            onclick="showSection('tanda')"
+            class="nav-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold text-slate-500 hover:bg-slate-100 transition-all duration-200"
+            data-target="tanda"
+          >
+            Tanda-tanda
+          </button>
+          <button
+            onclick="showSection('dampak')"
+            class="nav-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold text-slate-500 hover:bg-slate-100 transition-all duration-200"
+            data-target="dampak"
+          >
+            Dampak
+          </button>
+          <button
+            onclick="showSection('penanganan')"
+            class="nav-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold text-slate-500 hover:bg-slate-100 transition-all duration-200"
+            data-target="penanganan"
+          >
+            Penanganan
+          </button>
+          <button
+            onclick="showSection('pencegahan')"
+            class="nav-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold text-slate-500 hover:bg-slate-100 transition-all duration-200"
+            data-target="pencegahan"
+          >
+            Pencegahan
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+      <section
+        id="pengertian"
+        class="content-section fade-in opacity-100 transform translate-y-0"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100 relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 p-8 opacity-5 text-blood-500 pointer-events-none"
+          >
+            <i data-lucide="book-open" class="w-48 h-48"></i>
+          </div>
+          <div class="relative z-10">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-6"
+            >
+              <i data-lucide="info" class="w-4 h-4"></i> Apa itu Hipertensi?
+            </div>
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 leading-tight"
+            >
+              Pengertian Hipertensi
+            </h1>
+            <div class="prose prose-lg text-slate-600 max-w-none">
+              <p class="mb-4 text-xl leading-relaxed">
+                <strong class="text-blood-600">Hipertensi</strong> adalah
+                kondisi ketika tekanan darah
+                <strong>≥ 140/90 mmHg</strong> secara terus-menerus.
+              </p>
+              <div
+                class="bg-slate-50 border-l-4 border-medical-500 p-5 rounded-r-xl mt-6"
+              >
+                <p class="m-0 text-slate-700">
+                  <i
+                    data-lucide="database"
+                    class="w-5 h-5 inline-block mr-2 text-medical-600 mb-1"
+                  ></i>
+                  Dalam SIK (Sistem Informasi Kesehatan), data ini dicatat
+                  khusus untuk keperluan
+                  <strong>monitoring dan pengendalian penyakit</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gejala"
+        class="content-section hidden fade-in opacity-0 transform translate-y-4"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 text-orange-600 text-sm font-bold mb-6"
+          >
+            <i data-lucide="alert-triangle" class="w-4 h-4"></i> Waspada
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+            Gejala Hipertensi
+          </h2>
+          <p
+            class="text-lg text-slate-600 mb-8 bg-orange-50/50 p-4 rounded-xl border border-orange-100"
+          >
+            Hipertensi sering disebut <strong>"Silent Killer"</strong> karena
+            sering muncul tanpa gejala yang jelas. Namun, pada beberapa kasus
+            bisa muncul keluhan berikut:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100"
+            >
+              <div class="bg-white p-3 rounded-xl shadow-sm text-blood-500">
+                <i data-lucide="headache" class="w-6 h-6"></i>
+              </div>
+              <span class="font-semibold text-lg text-slate-800"
+                >Sakit kepala</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100"
+            >
+              <div class="bg-white p-3 rounded-xl shadow-sm text-blood-500">
+                <i data-lucide="dizzy" class="w-6 h-6"></i>
+              </div>
+              <span class="font-semibold text-lg text-slate-800">Pusing</span>
+            </div>
+            <div
+              class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100"
+            >
+              <div class="bg-white p-3 rounded-xl shadow-sm text-blood-500">
+                <i data-lucide="droplets" class="w-6 h-6"></i>
+              </div>
+              <span class="font-semibold text-lg text-slate-800">Mimisan</span>
+            </div>
+            <div
+              class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100"
+            >
+              <div class="bg-white p-3 rounded-xl shadow-sm text-blood-500">
+                <i data-lucide="wind" class="w-6 h-6"></i>
+              </div>
+              <span class="font-semibold text-lg text-slate-800"
+                >Sesak napas</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100"
+            >
+              <div class="bg-white p-3 rounded-xl shadow-sm text-blood-500">
+                <i data-lucide="battery-warning" class="w-6 h-6"></i>
+              </div>
+              <span class="font-semibold text-lg text-slate-800"
+                >Mudah lelah</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tanda"
+        class="content-section hidden fade-in opacity-0 transform translate-y-4"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-medical-50 text-medical-600 text-sm font-bold mb-6"
+          >
+            <i data-lucide="stethoscope" class="w-4 h-4"></i> Observasi Klinis
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-8">
+            Tanda-tanda Hipertensi
+          </h2>
+          <ul class="space-y-4">
+            <li
+              class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition"
+            >
+              <div class="mt-1 bg-medical-100 text-medical-600 p-2 rounded-lg">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Tekanan darah tinggi
+                </h3>
+                <p class="text-slate-500">
+                  Diketahui melalui hasil pengukuran tensimeter secara medis.
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition"
+            >
+              <div class="mt-1 bg-medical-100 text-medical-600 p-2 rounded-lg">
+                <i data-lucide="user" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Wajah kemerahan
+                </h3>
+                <p class="text-slate-500">
+                  Sering terlihat memerah akibat peningkatan aliran darah dan
+                  tekanan.
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition"
+            >
+              <div class="mt-1 bg-medical-100 text-medical-600 p-2 rounded-lg">
+                <i data-lucide="heart" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Detak jantung cepat
+                </h3>
+                <p class="text-slate-500">
+                  Jantung bekerja lebih keras untuk memompa darah ke seluruh
+                  tubuh.
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition"
+            >
+              <div class="mt-1 bg-medical-100 text-medical-600 p-2 rounded-lg">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Penglihatan kabur
+                </h3>
+                <p class="text-slate-500">
+                  Terjadi akibat tekanan berlebih pada pembuluh darah halus di
+                  mata.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="dampak"
+        class="content-section hidden fade-in opacity-0 transform translate-y-4"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-600 text-sm font-bold mb-6"
+          >
+            <i data-lucide="shield-alert" class="w-4 h-4"></i> Komplikasi
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+            Dampak Jika Tidak Ditangani
+          </h2>
+          <p class="text-lg text-slate-600 mb-8">
+            Hipertensi yang dibiarkan terus-menerus tanpa penanganan medis dapat
+            memicu berbagai komplikasi fatal, seperti:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div
+              class="bg-gradient-to-br from-red-50 to-white border border-red-100 p-6 rounded-2xl"
+            >
+              <i
+                data-lucide="heart-crack"
+                class="w-10 h-10 text-red-500 mb-4"
+              ></i>
+              <h3 class="font-bold text-xl text-slate-900 mb-2">
+                Penyakit Jantung
+              </h3>
+              <p class="text-slate-600 text-sm">
+                Otot jantung menebal dan kesulitan memompa darah, berisiko gagal
+                jantung.
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-red-50 to-white border border-red-100 p-6 rounded-2xl"
+            >
+              <i data-lucide="brain" class="w-10 h-10 text-red-500 mb-4"></i>
+              <h3 class="font-bold text-xl text-slate-900 mb-2">Stroke</h3>
+              <p class="text-slate-600 text-sm">
+                Tekanan tinggi dapat menyebabkan pembuluh darah di otak pecah
+                atau tersumbat.
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-red-50 to-white border border-red-100 p-6 rounded-2xl"
+            >
+              <i data-lucide="droplet" class="w-10 h-10 text-red-500 mb-4"></i>
+              <h3 class="font-bold text-xl text-slate-900 mb-2">
+                Gagal Ginjal
+              </h3>
+              <p class="text-slate-600 text-sm">
+                Merusak pembuluh darah di sekitar ginjal sehingga fungsinya
+                sebagai penyaring menurun.
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-red-50 to-white border border-red-100 p-6 rounded-2xl"
+            >
+              <i
+                data-lucide="git-branch"
+                class="w-10 h-10 text-red-500 mb-4"
+              ></i>
+              <h3 class="font-bold text-xl text-slate-900 mb-2">
+                Kerusakan Pembuluh Darah
+              </h3>
+              <p class="text-slate-600 text-sm">
+                Menyebabkan pembuluh darah menyempit, kaku, hingga berisiko
+                pecah di berbagai organ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="penanganan"
+        class="content-section hidden fade-in opacity-0 transform translate-y-4"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-6"
+          >
+            <i data-lucide="pill" class="w-4 h-4"></i> Terapi & Solusi
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-8">
+            Penanganan Hipertensi
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div
+              class="flex-1 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200"
+            >
+              <h3
+                class="font-bold text-xl text-slate-900 mb-4 flex items-center gap-2"
+              >
+                <i data-lucide="person-standing" class="text-medical-600"></i>
+                Perubahan Gaya Hidup
+              </h3>
+              <ul class="space-y-4">
+                <li
+                  class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm"
+                >
+                  <i
+                    data-lucide="check-circle-2"
+                    class="text-medical-500 w-5 h-5 flex-shrink-0"
+                  ></i>
+                  <span class="text-slate-700"
+                    >Kurangi asupan garam harian</span
+                  >
+                </li>
+                <li
+                  class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm"
+                >
+                  <i
+                    data-lucide="check-circle-2"
+                    class="text-medical-500 w-5 h-5 flex-shrink-0"
+                  ></i>
+                  <span class="text-slate-700"
+                    >Lakukan olahraga rutin (min. 30 menit/hari)</span
+                  >
+                </li>
+                <li
+                  class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm"
+                >
+                  <i
+                    data-lucide="check-circle-2"
+                    class="text-medical-500 w-5 h-5 flex-shrink-0"
+                  ></i>
+                  <span class="text-slate-700"
+                    >Berhenti merokok secara total</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex-1 bg-blood-50 p-6 sm:p-8 rounded-2xl border border-blood-100"
+            >
+              <h3
+                class="font-bold text-xl text-blood-900 mb-4 flex items-center gap-2"
+              >
+                <i data-lucide="cross" class="text-blood-600"></i> Pengobatan
+                Medis
+              </h3>
+              <div
+                class="bg-white p-5 rounded-xl shadow-sm border border-blood-50 h-full"
+              >
+                <p class="text-slate-700 mb-4">
+                  Pengobatan harus dilakukan di bawah pengawasan dokter
+                  profesional yang umumnya meliputi konsumsi:
+                </p>
+                <div
+                  class="inline-flex items-center gap-3 bg-blood-100 text-blood-700 font-bold px-4 py-3 rounded-lg w-full"
+                >
+                  <i data-lucide="pills" class="w-6 h-6"></i> Obat
+                  Antihipertensi
+                </div>
+                <p class="text-sm text-slate-500 mt-4 italic">
+                  *Obat wajib diminum secara teratur meskipun tekanan darah
+                  sudah terasa normal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="pencegahan"
+        class="content-section hidden fade-in opacity-0 transform translate-y-4"
+      >
+        <div
+          class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-sm font-bold mb-6"
+          >
+            <i data-lucide="shield-check" class="w-4 h-4"></i> Tindakan
+            Preventif
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-8">
+            Pencegahan Hipertensi
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-emerald-200 transition"
+            >
+              <div class="bg-emerald-100 p-3 rounded-xl text-emerald-600">
+                <i data-lucide="apple" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Pola Makan Sehat
+                </h3>
+                <p class="text-slate-600 text-sm mt-1">
+                  Perbanyak konsumsi sayur, buah, dan biji-bijian. Hindari
+                  makanan tinggi lemak jenuh.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-emerald-200 transition"
+            >
+              <div class="bg-emerald-100 p-3 rounded-xl text-emerald-600">
+                <i data-lucide="scale" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Menjaga Berat Badan
+                </h3>
+                <p class="text-slate-600 text-sm mt-1">
+                  Pertahankan berat badan ideal untuk mengurangi beban kerja
+                  jantung.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-emerald-200 transition"
+            >
+              <div class="bg-emerald-100 p-3 rounded-xl text-emerald-600">
+                <i data-lucide="smile" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Mengurangi Stres
+                </h3>
+                <p class="text-slate-600 text-sm mt-1">
+                  Kelola stres dengan relaksasi, meditasi, atau melakukan hobi
+                  yang menyenangkan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:border-emerald-200 transition"
+            >
+              <div class="bg-emerald-100 p-3 rounded-xl text-emerald-600">
+                <i data-lucide="activity-square" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900">
+                  Rutin Cek Tekanan Darah
+                </h3>
+                <p class="text-slate-600 text-sm mt-1">
+                  Lakukan pemeriksaan tensi secara berkala untuk deteksi dini.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800 mt-auto"
+    >
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <i data-lucide="heart-pulse" class="w-5 h-5 text-blood-500"></i>
+          <span class="font-bold text-lg text-white">Hipertensi Edu</span>
+        </div>
+        <p class="text-sm">Website edukasi kesehatan masyarakat.</p>
+        <div class="mt-4 pt-4 border-t border-slate-800 text-sm">
+          Dibuat oleh
+          <span class="text-white font-semibold">Dhea Madinah Washing</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
