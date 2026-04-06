@@ -1,0 +1,25 @@
+/* Tailwind Configuration (Inline) */
+/* Karena menggunakan CDN, konfigurasi warna dialihkan ke script di HTML atau tetap di sini jika menggunakan build tool. 
+   Untuk penggunaan murni CSS, kita definisikan variabel atau utility kustom */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Hide scrollbar for tab navigation on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.fade-in {
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+/* Tailwind Config Script (Ditempatkan di Head index.html tetap diperlukan jika menggunakan CDN) */
